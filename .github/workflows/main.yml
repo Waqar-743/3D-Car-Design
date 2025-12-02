@@ -4,10 +4,10 @@ name: Build and Deploy F1 Experience
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -27,9 +27,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run type check
-        run: npm run build
-
       - name: Build production
         run: npm run build
 
@@ -43,7 +40,7 @@ jobs:
     name: Deploy to GitHub Pages
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
 
     permissions:
       contents: read
