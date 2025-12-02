@@ -1,0 +1,11 @@
+Model Information:
+* title:	F1 2024 Mercedes AMG Petronas W15
+* source:	https://sketchfab.com/3d-models/f1-2024-mercedes-amg-petronas-w15-ae948052018e44e18e4cd1fb7ddd9db2
+* author:	MattsActuallyUsefulModels (https://sketchfab.com/MattsActuallyUsefulModels)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "F1 2024 Mercedes AMG Petronas W15" (https://sketchfab.com/3d-models/f1-2024-mercedes-amg-petronas-w15-ae948052018e44e18e4cd1fb7ddd9db2) by MattsActuallyUsefulModels (https://sketchfab.com/MattsActuallyUsefulModels) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
