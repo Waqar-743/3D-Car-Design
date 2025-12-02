@@ -15,7 +15,7 @@ export const CarSelector: React.FC = () => {
     spotlightMode,
   } = useCarStore();
   const cars = getAllCars();
-  const clickTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const clickTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   
   // Handle car button click with triple-click detection
   const handleCarClick = (carId: string) => {

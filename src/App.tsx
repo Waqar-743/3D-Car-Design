@@ -6,8 +6,7 @@ function App() {
       {/* 3D WebGL Car Configurator - Full Screen */}
       <PanoramicViewer
         initialCar="mclaren-mcl38"
-        onCarSelect={(carId) => console.log(`Selected: ${carId}`)}
-        onPriceClick={(price) => console.log(`Price: ${price}`)}
+        onCarSelect={(carId: string) => console.log(`Selected: ${carId}`)}
       />
     </div>
   );
