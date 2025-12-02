@@ -22,31 +22,34 @@ interface UseViewStateReturn {
   stopAutoRotate: () => void;
 }
 
+// Get base URL for assets
+const BASE_URL = import.meta.env.BASE_URL || '/';
+
 // Get image paths for a view based on available images
 const getViewImagePaths = (viewId: string): string[] => {
   // Map views to actual available images
   const imageMapping: Record<string, string[]> = {
     exterior: [
-      "/car-images/Img-left-far.png",
-      "/car-images/from-right.png",
-      "/car-images/f1-from-left-far.png",
-      "/car-images/img/f1-from-left-far.png",
-      "/car-images/img/from-right-close.png",
-      "/car-images/img/from-right.png",
+      `${BASE_URL}car-images/Img-left-far.png`,
+      `${BASE_URL}car-images/from-right.png`,
+      `${BASE_URL}car-images/f1-from-left-far.png`,
+      `${BASE_URL}car-images/img/f1-from-left-far.png`,
+      `${BASE_URL}car-images/img/from-right-close.png`,
+      `${BASE_URL}car-images/img/from-right.png`,
     ],
     interior: [
-      "/car-images/Img-inside.png",
+      `${BASE_URL}car-images/Img-inside.png`,
     ],
     front: [
-      "/car-images/Img-fRONT.png",
-      "/car-images/Img-From-Head.png",
-      "/car-images/Img-far-front.png",
-      "/car-images/front-too-close.png",
+      `${BASE_URL}car-images/Img-fRONT.png`,
+      `${BASE_URL}car-images/Img-From-Head.png`,
+      `${BASE_URL}car-images/Img-far-front.png`,
+      `${BASE_URL}car-images/front-too-close.png`,
     ],
     detail: [
-      "/car-images/img/from-right-close.png",
-      "/car-images/front-too-close.png",
-      "/car-images/Img-From-Head.png",
+      `${BASE_URL}car-images/img/from-right-close.png`,
+      `${BASE_URL}car-images/front-too-close.png`,
+      `${BASE_URL}car-images/Img-From-Head.png`,
     ],
   };
 

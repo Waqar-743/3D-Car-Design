@@ -8,9 +8,12 @@ import { getCarById } from '../../config/carModels';
 import { EXCLUDED_MESH_PATTERNS } from './ColorPicker';
 import { F1_HOTSPOTS, HotspotData } from './Hotspots';
 
+// Get base URL for assets
+const BASE_URL = import.meta.env.BASE_URL || '/';
+
 // Preload models for faster switching
-useGLTF.preload('/models/mclaren-mcl38/f1_2024_mclaren_mcl38.glb');
-useGLTF.preload('/models/mercedes-w14/f1_2023_mercedes_amg_w14_e_performance_s1.glb');
+useGLTF.preload(`${BASE_URL}models/mclaren-mcl38/f1_2024_mclaren_mcl38.glb`);
+useGLTF.preload(`${BASE_URL}models/mercedes-w14/f1_2023_mercedes_amg_w14_e_performance_s1.glb`);
 
 interface CarModel3DProps {
   carId: string;

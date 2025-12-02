@@ -1,4 +1,7 @@
 // Car model configurations
+// Base URL for assets (handles GitHub Pages subdirectory)
+const BASE = import.meta.env.BASE_URL || '/';
+
 export interface CarModel {
   id: string;
   name: string;
@@ -21,8 +24,8 @@ export const CAR_MODELS: Record<string, CarModel> = {
     model: "F1 2024",
     year: 2024,
     color: "Papaya Orange",
-    modelPath: "/models/mclaren-mcl38/f1_2024_mclaren_mcl38.glb",
-    fallbackImages: "/car-images/",
+    modelPath: `${BASE}models/mclaren-mcl38/f1_2024_mclaren_mcl38.glb`,
+    fallbackImages: `${BASE}car-images/`,
     imageCount: 11,
     active: true,
     scale: 2.5,
@@ -35,8 +38,8 @@ export const CAR_MODELS: Record<string, CarModel> = {
     model: "F1 2023",
     year: 2023,
     color: "Silver Arrow",
-    modelPath: "/models/mercedes-w14/f1_2023_mercedes_amg_w14_e_performance_s1.glb",
-    fallbackImages: "/car-images/",
+    modelPath: `${BASE}models/mercedes-w14/f1_2023_mercedes_amg_w14_e_performance_s1.glb`,
+    fallbackImages: `${BASE}car-images/`,
     imageCount: 11,
     active: true,
     scale: 2.5,
@@ -49,8 +52,8 @@ export const CAR_MODELS: Record<string, CarModel> = {
     model: "F1 2022",
     year: 2022,
     color: "Papaya Orange",
-    modelPath: "/models/mclaren-mcl36/scene.gltf",
-    fallbackImages: "/car-images/",
+    modelPath: `${BASE}models/mclaren-mcl36/scene.gltf`,
+    fallbackImages: `${BASE}car-images/`,
     imageCount: 11,
     active: false, // Disabled - GLTF model has loading issues
     scale: 2.5,
@@ -63,8 +66,8 @@ export const CAR_MODELS: Record<string, CarModel> = {
     model: "F1 2023",
     year: 2023,
     color: "Oracle Blue",
-    modelPath: "/models/mclaren-mcl38/f1_2024_mclaren_mcl38.glb",
-    fallbackImages: "/car-images/",
+    modelPath: `${BASE}models/mclaren-mcl38/f1_2024_mclaren_mcl38.glb`,
+    fallbackImages: `${BASE}car-images/`,
     imageCount: 11,
     active: true,
     scale: 2.5,
@@ -77,8 +80,8 @@ export const CAR_MODELS: Record<string, CarModel> = {
     model: "F1 2023",
     year: 2023,
     color: "Rosso Corsa",
-    modelPath: "/models/mercedes-w14/f1_2023_mercedes_amg_w14_e_performance_s1.glb",
-    fallbackImages: "/car-images/",
+    modelPath: `${BASE}models/mercedes-w14/f1_2023_mercedes_amg_w14_e_performance_s1.glb`,
+    fallbackImages: `${BASE}car-images/`,
     imageCount: 11,
     active: true,
     scale: 2.5,

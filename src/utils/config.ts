@@ -15,12 +15,15 @@ export interface CarConfig {
   imagePath: string;
 }
 
+// Get base URL for assets
+const BASE_URL = import.meta.env.BASE_URL || '/';
+
 // Default car configuration
 export const defaultCarConfig: CarConfig = {
   model: "Luxury Sports Car",
   year: 2024,
   subtitle: "Premium Edition",
-  imagePath: "/car-images/",
+  imagePath: `${BASE_URL}car-images/`,
 };
 
 // Views configuration - using available images
